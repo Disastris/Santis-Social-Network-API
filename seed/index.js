@@ -1,5 +1,5 @@
 const db = require("../config/connection");
-const { User } = require("../models");
+const { User, Thought, Reaction } = require("../models");
 
 db.once("open", async () => {
   await User.deleteMany({});
